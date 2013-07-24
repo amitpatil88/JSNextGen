@@ -2,6 +2,7 @@ var publishsubscribe = {};
 (function(ps){
 	var topics = {}, subscribeUID = -1;
 	
+	
 	ps.publish = function(topic,data){
 		if(!topics[topic]){
 			return false;
