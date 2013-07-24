@@ -18,13 +18,11 @@ var publishsubscribe = {};
 		if(!topics[topic]){
 			topics[topic] = [];
 		}
-		
 		var token = (++subscribeUID).toString();
 		topics[topic].push({
 			token : token,
 			callback : func
-		});
-		
+		});		
 		return token;
 	},
 	
